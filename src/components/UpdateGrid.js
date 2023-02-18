@@ -9,7 +9,7 @@ const UpdateGrid = ({ data }) => {
   if (!data) return <></>
 
   return (
-    <div className='bg-white rounded-lg shadow-md p-5 space-y-6'>
+    <div className='bg-white rounded-lg shadow-md p-5 space-y-3'>
       {
         data?.map((item, i) => {
           return (
@@ -26,7 +26,10 @@ const UpdateGrid = ({ data }) => {
                 </div>
               </div>
               <div className='basis-10'>
-                <Link to={item.link} className='btn btn-sm btn-ghost'><BsChevronRight></BsChevronRight></Link>
+                {
+                  item?.link &&
+                  <Link to={item?.link} className='btn btn-sm btn-ghost'><BsChevronRight></BsChevronRight></Link>
+                }
               </div>
             </div>
           );
