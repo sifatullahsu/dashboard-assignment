@@ -25,6 +25,7 @@ const Sidebar = () => {
           <ul className="menu">
             <li><NavLink to='/'><img src={dashboardIcon} alt="" />Home</NavLink></li>
             <li><NavLink to='/course'><img src={dashboardIcon} alt="" />Course</NavLink></li>
+            <li><NavLink to='/mentor'><img src={dashboardIcon} alt="" />Mentor</NavLink></li>
           </ul>
 
         </div>

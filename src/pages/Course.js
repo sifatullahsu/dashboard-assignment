@@ -1,15 +1,15 @@
 import React from 'react';
 import PageHeading from '../components/PageHeading';
 
-const Dashboard = () => {
+const Course = () => {
   return (
     <div>
       <PageHeading
-        heading='Welcome Back, Mr.Arpit Lad 👋'
-        text='Here are some insights for your daily activty'
+        heading='Course Page'
+        text='Batch 1 Acoustic guitar'
       ></PageHeading>
     </div>
   );
 };
 
-export default Dashboard;
+export default Course;
