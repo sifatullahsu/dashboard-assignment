@@ -32,3 +32,19 @@ h3 {
 .menu a:hover {
   @apply bg-secondary text-primary;
 }
+
+.avatar-group :where(.avatar) {
+  border: 0;
+}
+
+.btn-batch {
+  @apply btn btn-outline w-full rounded-lg flex justify-between;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  color: #000;
+  font-weight: 500;
+}
+
+.btn-batch:hover {
+  @apply bg-secondary text-primary !important;
+  border-color: transparent;
+}
