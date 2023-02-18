@@ -27,6 +27,7 @@ module.exports = {
           primary: "#3949AB",
           secondary: "#ebf4fe",
           "base-100": "#8F90A6",
+          neutral: "#41475E",
 
           "--rounded-btn": "4px",
           "--btn-text-case": "capitalize"
