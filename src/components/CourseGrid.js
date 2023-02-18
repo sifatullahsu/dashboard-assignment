@@ -15,11 +15,11 @@ const CourseGrid = ({ data }) => {
                 <div className='basis-5/12 border-r'>
 
                   <img src={rectangleImage} className='mb-3' alt="" />
-                  <h2>{item?.name}</h2>
+                  <h4>{item?.name}</h4>
 
                   <div className='flex mt-6'>
                     <div className='basis-7/12'>
-                      <p>Students</p>
+                      <p className='text-[13px] font-semibold mb-1'>Students</p>
                       <div className="avatar-group -space-x-6">
                         {
                           item?.students?.map((student, i) =>
@@ -31,7 +31,7 @@ const CourseGrid = ({ data }) => {
                       </div>
                     </div>
                     <div className='basis-5/12'>
-                      <p>Batches</p>
+                      <p className='text-[13px] font-semibold mb-1'>Batches</p>
                       <h3 className='text-2xl'>{item?.batches?.length}</h3>
                     </div>
                   </div>
