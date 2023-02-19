@@ -1,17 +1,16 @@
 import React from 'react';
-import { BsThreeDotsVertical } from 'react-icons/bs';
 import CourseSlider from '../components/CourseSlider';
 import PageHeading from '../components/PageHeading';
 import UpdateGrid from '../components/UpdateGrid';
+import upcommingCourses from '../data/upcommingCourses';
+import TopicHeading from '../components/TopicHeading';
+import StudentTraffic from '../components/StudentTraffic';
+import Statestics from '../components/Statestics';
 
 import lastUpdate from '../data/lastUpdate';
-import upcommingCourses from '../data/upcommingCourses';
-
-import increaseIcon from '../assets/increase.png';
-import linearIcon from '../assets/linear.png';
-import TopicHeading from '../components/TopicHeading';
 
 const Dashboard = () => {
+
   return (
     <div className='space-y-8'>
       <PageHeading
@@ -24,43 +23,10 @@ const Dashboard = () => {
         <TopicHeading title='Mentor Dashboard'></TopicHeading>
         <div className='flex flex-wrap justify-between'>
           <div className='basis-6/12 max-w-[50%]'>
-            <div className='grid grid-cols-2 gap-5'>
-
-              <div className='p-5 rounded-lg relative space-y-3 min-h-[147.5px]' style={{ boxShadow: "0px 3.20559px 32.0559px rgba(0, 0, 0, 0.08)" }}>
-                <BsThreeDotsVertical className='absolute top-5 right-5'></BsThreeDotsVertical>
-                <p className='text-[13px] font-semibold'>students</p>
-                <h2 className='text-3xl'>10</h2>
-                <div className='text-xs'>
-                  <img src={increaseIcon} className='inline' alt="" />
-                  <span className='text-[#4EAF51]'>13.02%</span>
-                  <span>From May</span>
-                </div>
-              </div>
-              <div className='p-5 rounded-lg relative space-y-3 min-h-[147.5px]' style={{ boxShadow: "0px 3.20559px 32.0559px rgba(0, 0, 0, 0.08)" }}>
-                <BsThreeDotsVertical className='absolute top-5 right-5'></BsThreeDotsVertical>
-                <p className='text-[13px] font-semibold'>Income</p>
-                <h2 className='text-3xl'>12</h2>
-                <div className='text-xs'>
-                  <img src={linearIcon} className='inline' alt="" />
-                  <span>0.0%</span>
-                  <span>From May</span>
-                </div>
-              </div>
-              <div className='p-5 rounded-lg relative space-y-3 min-h-[147.5px]' style={{ boxShadow: "0px 3.20559px 32.0559px rgba(0, 0, 0, 0.08)" }}>
-                <BsThreeDotsVertical className='absolute top-5 right-5'></BsThreeDotsVertical>
-                <p className='text-[13px] font-semibold'>questions</p>
-                <h2 className='text-3xl'>23</h2>
-              </div>
-              <div className='p-5 rounded-lg relative space-y-3 min-h-[147.5px]' style={{ boxShadow: "0px 3.20559px 32.0559px rgba(0, 0, 0, 0.08)" }}>
-                <BsThreeDotsVertical className='absolute top-5 right-5'></BsThreeDotsVertical>
-                <p className='text-[13px] font-semibold'>Overdue questions</p>
-                <h2 className='text-3xl'>11</h2>
-              </div>
-
-            </div>
+            <Statestics></Statestics>
           </div>
-          <div className='basis-6/12 max-w-[50%]'>
-
+          <div className='basis-6/12 max-w-[50%] pl-5'>
+            <StudentTraffic></StudentTraffic>
           </div>
         </div>
       </div>
