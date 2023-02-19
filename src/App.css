@@ -52,3 +52,25 @@ h3 {
 .swiper-slide {
   width: 80% !important;
 }
+
+.table {
+  box-shadow: 0px 3.20559px 32.0559px rgba(0, 0, 0, 0.08);
+}
+
+.table :where(tbody th, tbody td) {
+  background: #fff;
+}
+
+.badge {
+  @apply rounded text-sm h-5;
+}
+
+.table :where(thead, tfoot) :where(th, td) {
+  @apply bg-transparent font-medium capitalize text-[#8F90A6];
+}
+
+.checkbox {
+  height: 1rem;
+  width: 1rem;
+  padding-top: 3px;
+}
