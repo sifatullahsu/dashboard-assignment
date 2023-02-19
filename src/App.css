@@ -74,3 +74,7 @@ h3 {
   width: 1rem;
   padding-top: 3px;
 }
+
+.modules .collapse:last-child {
+  border-radius: 0 0 8px 8px;
+}
