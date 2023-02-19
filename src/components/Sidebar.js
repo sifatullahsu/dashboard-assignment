@@ -21,7 +21,7 @@ const Sidebar = () => {
       <div className='basis-full'>
         <div className='pl-5 pt-8 pr-8 pb-5'>
 
-          <span className='text-xs mb-5 inline-block text-base-100'>Dashboard</span>
+          <span className='text-xs mb-2 inline-block text-base-100'>Dashboard</span>
           <ul className="menu">
             <li><NavLink to='/'><img src={dashboardIcon} alt="" />Home</NavLink></li>
             <li><NavLink to='/course'><img src={dashboardIcon} alt="" />Course</NavLink></li>
