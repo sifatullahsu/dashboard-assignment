@@ -19,7 +19,7 @@ const StudentTraffic = () => {
       <BsThreeDotsVertical className='absolute top-5 right-5'></BsThreeDotsVertical>
 
       <div className='grid grid-cols-2 gap-5 mt-10'>
-        <div>
+        <div className='relative'>
           <ResponsiveContainer aspect={1.2}>
             <PieChart>
               <Pie
@@ -37,39 +37,43 @@ const StudentTraffic = () => {
               </Pie>
             </PieChart>
           </ResponsiveContainer>
+          <div className='absolute rounded-full w-24 h-24 top-12 left-12 flex justify-center items-center flex-col' style={{ boxShadow: '0px 3.20559px 32.0559px rgba(0, 0, 0, 0.08)' }}>
+            <p className='text-xs'>Students</p>
+            <h3>56</h3>
+          </div>
         </div>
 
         <div className='flex items-center'>
           <div className='grid grid-cols-2 gap-5'>
             <div>
-              <h3 className='text-2xl'>15<span className='text-[#8F90A6] text-base'>(48%)</span></h3>
+              <h3 className='text-2xl font-medium'>15<span className='text-[#8F90A6] text-base'>(48%)</span></h3>
               <p className='text-[#555770]'>
                 <BsRecordCircleFill className='inline mb-1 text-lg text-[#3949AB]'></BsRecordCircleFill> From you
               </p>
             </div>
             <div>
-              <h3 className='text-2xl'>15<span className='text-[#8F90A6] text-base'>(30%)</span></h3>
+              <h3 className='text-2xl font-medium'>15<span className='text-[#8F90A6] text-base'>(30%)</span></h3>
               <p className='text-[#555770]'>
-                <BsRecordCircleFill className='inline mb-1 text-lg text-[#3949AB]'></BsRecordCircleFill> Affilite
+                <BsRecordCircleFill className='inline mb-1 text-lg text-[#6E7BCF]'></BsRecordCircleFill> Affilite
               </p>
             </div>
             <div>
-              <h3 className='text-2xl'>15<span className='text-[#8F90A6] text-base'>(13%)</span></h3>
+              <h3 className='text-2xl font-medium'>15<span className='text-[#8F90A6] text-base'>(13%)</span></h3>
               <p className='text-[#555770]'>
-                <BsRecordCircleFill className='inline mb-1 text-lg text-[#3949AB]'></BsRecordCircleFill> From us
+                <BsRecordCircleFill className='inline mb-1 text-lg text-[#0A1C8D]'></BsRecordCircleFill> From us
               </p>
             </div>
             <div>
-              <h3 className='text-2xl'>15<span className='text-[#8F90A6] text-base'>(9%)</span></h3>
+              <h3 className='text-2xl font-medium'>15<span className='text-[#8F90A6] text-base'>(9%)</span></h3>
               <p className='text-[#555770]'>
-                <BsRecordCircleFill className='inline mb-1 text-lg text-[#3949AB]'></BsRecordCircleFill> Others
+                <BsRecordCircleFill className='inline mb-1 text-lg text-[#DCF2FE]'></BsRecordCircleFill> Others
               </p>
             </div>
           </div>
         </div>
       </div>
 
-    </div>
+    </div >
   );
 };
 
